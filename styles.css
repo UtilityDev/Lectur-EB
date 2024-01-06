@@ -2,3 +2,27 @@
     --power-blue: #1400FF;
     --background: #E3E3F6;
 }
+
+* {
+    padding: 0; margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--power-blue);
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: var(--background);
+}
