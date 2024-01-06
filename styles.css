@@ -8,6 +8,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,4 +38,12 @@ body {
     width: 250px;
     padding: 50px;
     border-radius: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 25px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
 }
