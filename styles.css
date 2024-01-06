@@ -18,14 +18,14 @@ body {
 
 
 .title {
-    font-size: 80px;
+    font-size: 76px;
     color: var(--power-blue);
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -37,8 +37,9 @@ body {
     gap: 10px;
     background-color: white;
     width: 350px;
-    padding: 50px;
+    padding: 45px;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px 0px
 }
 
 /* Buttons */
