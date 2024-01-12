@@ -45,14 +45,22 @@ body {
 /* Buttons */
 .btn {
     padding: 20px;
+    height: 65px;
     width: 300px;
     border-radius: 12px;
     border: none;
     font-weight: bold;
     font-size: 21px;
+
+    transition: 0.2s;
 }
 
 .btn.blue {
     background-color: var(--power-blue);
     color: white;
+}
+
+.btn:hover {
+    background-color: rgb(40, 40, 201);
+    width: 350px;
 }
