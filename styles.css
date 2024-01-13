@@ -59,9 +59,23 @@ body {
     color: white;
 }
 
+.btn.black {
+    background-color: black;
+    color: white;
+}
+
 .btn:hover {
+    width: 375px;
+}
+
+.btn.blue:hover {
     background-color: transparent;
     color: var(--power-blue);
     border: 3px solid var(--power-blue);
-    width: 375px;
+}
+
+.btn.black:hover {
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
 }
