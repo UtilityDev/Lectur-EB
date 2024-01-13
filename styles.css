@@ -51,8 +51,7 @@ body {
     border: none;
     font-weight: bold;
     font-size: 21px;
-
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .btn.blue {
@@ -61,6 +60,8 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(40, 40, 201);
-    width: 350px;
+    background-color: transparent;
+    color: var(--power-blue);
+    border: 3px solid var(--power-blue);
+    width: 375px;
 }
