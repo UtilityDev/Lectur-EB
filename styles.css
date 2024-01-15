@@ -64,3 +64,11 @@ body {
     background-color: rgb(40, 40, 201);
     width: 350px;
 }
+
+.input.text {
+    padding: 10px;
+    height: 30px;
+    width: 160px;
+    border-radius: 12px;
+    font-size: 30px;
+}
