@@ -51,8 +51,7 @@ body {
     border: none;
     font-weight: bold;
     font-size: 21px;
-
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .btn.blue {
@@ -60,15 +59,23 @@ body {
     color: white;
 }
 
-.btn:hover {
-    background-color: rgb(40, 40, 201);
-    width: 350px;
+.btn.black {
+    background-color: black;
+    color: white;
 }
 
-.input.text {
-    padding: 10px;
-    height: 30px;
-    width: 160px;
-    border-radius: 12px;
-    font-size: 30px;
+.btn:hover {
+    width: 375px;
+}
+
+.btn.blue:hover {
+    background-color: transparent;
+    color: var(--power-blue);
+    border: 3px solid var(--power-blue);
+}
+
+.btn.black:hover {
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
 }
