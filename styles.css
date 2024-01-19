@@ -69,9 +69,8 @@ body {
 }
 
 .btn.blue:hover {
-    background-color: transparent;
-    color: var(--power-blue);
-    border: 3px solid var(--power-blue);
+    background-color: rgb(31, 36, 174);
+    color: white;
 }
 
 .btn.black:hover {
