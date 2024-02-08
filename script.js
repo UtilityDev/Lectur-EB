@@ -1,7 +1,8 @@
+// Initial variables
+
 let hostbtn = document.getElementById("host");
 let joinbtn = document.getElementById("join");
 
-let hosttext = document.getElementById("temptext");
 let codefielddiv = document.getElementById("codefielddiv");
 
 var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -16,12 +17,17 @@ function randchar(length) {
     return code;
 }
 
+// When "host" button is clicked
 hostbtn.addEventListener("click",function(){
     hostbtn.style.display = "none"
     joinbtn.style.display = "none"
     
     let roomCode = randchar(6);
+    
+    document.getElementById("temptext").style.display = "block";
     document.getElementById("temptext").innerHTML = roomCode;
+    
+    // Transmits a fetch request to "test.php" with the room code
     fetch("test.php", {
         method: "POST",
         headers: {
@@ -29,10 +35,9 @@ hostbtn.addEventListener("click",function(){
         },
         body: roomCode,
     });
-
-    hosttext.style.display = "block"
 })
 
+// When join button is clicked
 joinbtn.addEventListener("click",function(){
     hostbtn.style.display = "none"
     joinbtn.style.display = "none"
