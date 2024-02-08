@@ -16,11 +16,12 @@ function randchar (length) {
     return kevin
 }
 
+
+
 hostbtn.addEventListener("click",function(){
     hostbtn.style.display = "none"
     joinbtn.style.display = "none"
-    hosttext.style.display = "block"
-
+    
     let roomCode = randchar(6);
     document.getElementById("temptext").innerHTML = roomCode;
     fetch("test.php", {
@@ -30,6 +31,8 @@ hostbtn.addEventListener("click",function(){
         },
         body: roomCode,
     });
+
+    hosttext.style.display = "block"
 })
 
 joinbtn.addEventListener("click",function(){
