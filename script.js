@@ -6,17 +6,15 @@ let codefielddiv = document.getElementById("codefielddiv");
 
 var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-function randchar (length) {
-    var looplength = length-2
-    var kevin = Math.floor(Math.random() * characters.length);
-    for (let i = 0; i < looplength; i++) {
-        numb = Math.floor(Math.random() * characters.length);        
-        kevin = kevin + characters[numb];
+// Generate a random sequence of characters in "characters" based on length
+function randchar(length) {
+    let code = "";
+    for (let i = 0; i < length; i++) {
+        code += characters[Math.floor(Math.random() * characters.length)];
     }
-    return kevin
+
+    return code;
 }
-
-
 
 hostbtn.addEventListener("click",function(){
     hostbtn.style.display = "none"
