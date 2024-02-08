@@ -27,8 +27,7 @@ hostbtn.addEventListener("click",function(){
     document.getElementById("temptext").style.display = "block";
     document.getElementById("temptext").innerHTML = roomCode;
     
-    // Transmits a fetch request to "test.php" with the room code
-    fetch("test.php", {
+    fetch("host.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
