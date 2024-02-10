@@ -25,6 +25,7 @@ hostbtn.addEventListener("click",function(){
     let roomCode = randchar(6);
     
     document.getElementById("temptext").style.display = "block";
+    
     document.getElementById("temptext").innerHTML = roomCode;
     
     fetch("host.php", {
