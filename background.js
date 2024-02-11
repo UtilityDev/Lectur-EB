@@ -12,6 +12,8 @@ class Circle {
         this.x = randomPos()[0];
         this.y = randomPos()[1];
         this.radius = radius;
+        this.originalRadius = radius;
+        this.maxRadius = 160;
         this.color = color;
         this.moveFac = (Math.random() * 0.5) * 2;
         this.opacity = randomRange(75, 180);
@@ -21,6 +23,15 @@ class Circle {
         noStroke();
         fill(this.color[0], this.color[1], this.color[2], this.opacity);
 
+        let growthFactor = 2;
+        if (dist(mouseX, mouseY, this.x, this.y) < this.originalRadius && this.radius < this.maxRadius) {
+            this.radius += growthFactor;
+        } else {
+            if (this.radius > this.originalRadius) {
+                this.radius -= growthFactor;
+            }
+            // this.radius = this.originalRadius;
+        }
         ellipse(this.x, this.y, this.radius, this.radius);
     }
 
@@ -61,6 +72,4 @@ function draw () {
         circle.draw();
         circle.move();
     }
-
-    console.log(circles[0].x);
 }
