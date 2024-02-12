@@ -3,7 +3,7 @@
 let hostButton = document.getElementById("host");
 let joinButton = document.getElementById("join");
 
-let codeFieldContainer = document.getElementById("codefield-container");
+let codeFieldContainer = document.querySelector(".codefield-container");
 let codeText = document.getElementById("codeText");
 
 var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -22,7 +22,7 @@ function randchar(length) {
 hostButton.addEventListener("click",function(){
     hostButton.style.display = "none"
     joinButton.style.display = "none"
-    
+
     let roomCode = randchar(6);
     
     codeText.style.display = "block";
@@ -39,7 +39,7 @@ hostButton.addEventListener("click",function(){
 
 // When join button is clicked
 joinButton.addEventListener("click",function(){
-    hostButton.style.display = "none"
-    joinButton.style.display = "none"
-    codeFieldContainer.style.display="block"
+    hostButton.style.display = "none";
+    joinButton.style.display = "none";
+    codeFieldContainer.style.display = "flex";
 })
