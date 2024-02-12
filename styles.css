@@ -44,7 +44,7 @@ body {
     align-items: center;
     gap: 10px;
     background-color: white;
-    width: 350px;
+    width: auto;
     height: auto;
     padding: 45px;
     border-radius: 20px;
@@ -67,9 +67,9 @@ body {
 
 /* Buttons */
 .btn {
-    padding: 20px;
-    height: 65px;
-    width: 200px;
+    padding: 25px;
+    height: auto;
+    width: auto;
     border-radius: 12px;
     border: none;
     font-weight: bold;
@@ -92,7 +92,7 @@ body {
 }
 
 .btn.blue:hover {
-    background-color: rgb(29, 34, 196);
+    background-color: rgb(26, 32, 198);
     color: white;
 }
 
