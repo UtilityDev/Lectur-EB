@@ -20,6 +20,9 @@ body {
 .title {
     font-size: 76px;
     color: var(--power-blue);
+    animation-name: titleAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .main-content {
@@ -77,4 +80,11 @@ body {
     background-color: transparent;
     color: black;
     border: 3px solid black;
+}
+
+/* Animations */
+@keyframes titleAnimation {
+    0% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
 }

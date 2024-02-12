@@ -30,7 +30,6 @@ class Circle {
             if (this.radius > this.originalRadius) {
                 this.radius -= growthFactor;
             }
-            // this.radius = this.originalRadius;
         }
         ellipse(this.x, this.y, this.radius, this.radius);
     }
