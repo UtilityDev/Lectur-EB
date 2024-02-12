@@ -1,9 +1,10 @@
 // Initial variables
 
-let hostbtn = document.getElementById("host");
-let joinbtn = document.getElementById("join");
+let hostButton = document.getElementById("host");
+let joinButton = document.getElementById("join");
 
-let codefielddiv = document.getElementById("codefielddiv");
+let codeFieldContainer = document.getElementById("codefield-container");
+let codeText = document.getElementById("codeText");
 
 var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
@@ -18,15 +19,14 @@ function randchar(length) {
 }
 
 // When "host" button is clicked
-hostbtn.addEventListener("click",function(){
-    hostbtn.style.display = "none"
-    joinbtn.style.display = "none"
+hostButton.addEventListener("click",function(){
+    hostButton.style.display = "none"
+    joinButton.style.display = "none"
     
     let roomCode = randchar(6);
     
-    document.getElementById("temptext").style.display = "block";
-    
-    document.getElementById("temptext").innerHTML = roomCode;
+    codeText.style.display = "block";
+    codeText.innerHTML = roomCode;
     
     fetch("host.php", {
         method: "POST",
@@ -38,8 +38,8 @@ hostbtn.addEventListener("click",function(){
 })
 
 // When join button is clicked
-joinbtn.addEventListener("click",function(){
-    hostbtn.style.display = "none"
-    joinbtn.style.display = "none"
-    codefielddiv.style.display="block"
+joinButton.addEventListener("click",function(){
+    hostButton.style.display = "none"
+    joinButton.style.display = "none"
+    codeFieldContainer.style.display="block"
 })
