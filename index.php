@@ -11,8 +11,8 @@
     <div class="main-content">
         <h1 class="title">Lectur</h1>
         <div class="main-buttons">
-            <button class="btn blue" id="host"><i class="fa-solid fa-plus"></i> Host Room</button>
-            <button class="btn blue" id="join"><i class="fa-solid fa-bolt"></i> Join Room</button>
+            <button class="btn blue" id="host"><i class="fa-solid fa-plus"></i> New classroom</button>
+            <button class="btn blue" id="join"><i class="fa-solid fa-bolt"></i> Join a classroom</button>
             <p id="codeText" style="display: none">code</p>
             <div style="display:none" class="codefield-container">
                 <input type="text" class="textbox" id="codefield", placeholder="Room code">
