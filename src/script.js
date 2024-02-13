@@ -27,14 +27,16 @@ hostButton.addEventListener("click",function(){
     
     codeText.style.display = "block";
     codeText.innerHTML = roomCode;
+
+    window.location = "src/room.php?code=" + roomCode;
     
-    fetch("src/host.php", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: roomCode,
-    });
+    // fetch("src/host.php", {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/x-www-form-urlencoded",
+    //     },
+    //     body: roomCode,
+    // });
 })
 
 // When join button is clicked
