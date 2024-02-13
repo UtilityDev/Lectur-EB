@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lectur</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/875f8e9144.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main-content">
         <h1 class="title">Lectur</h1>
         <div class="main-buttons">
-            <button class="btn blue" id="host"><i class="fa-solid fa-plus"></i> New classroom</button>
-            <button class="btn blue" id="join"><i class="fa-solid fa-bolt"></i> Join a classroom</button>
+            <button class="btn blue" id="host">New classroom</button>
+            <button class="btn blue" id="join">Join a classroom</button>
             <p id="codeText" style="display: none">code</p>
             <div style="display:none" class="codefield-container">
                 <input type="text" class="textbox" id="codefield", placeholder="Room code">
                 <input type="text" class="textbox" id="codefield", placeholder="Nickname">
-                <button class="btn full blue"><i class="fa-solid fa-bolt"></i> Join</button>
+                <button class="btn full blue">Join</button>
             </div>
         </div>
     </div>
