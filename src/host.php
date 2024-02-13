@@ -1,6 +1,6 @@
 <?php
 require("connection.php");
-$roomCode = $_POST["roomCode"];
+$roomCode = $_GET["roomCode"];
 
 echo $roomCode;
 
