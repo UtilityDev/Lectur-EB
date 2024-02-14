@@ -10,3 +10,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 }
+
+function tableInsert(string $table, string $values, mysqli $conn) {
+    $conn->query("INSERT INTO $table VALUES ($values);");
+}
+
+function insertRoom(string $roomCode, string $adminId, $conn) {
+    $conn->query("INSERT INTO Rooms (room_code, admin_id) VALUES ('$roomCode', '$adminId');");
+}
