@@ -4,7 +4,6 @@ let hostButton = document.getElementById("host");
 let joinButton = document.getElementById("join");
 
 let codeFieldContainer = document.querySelector(".codefield-container");
-let codeText = document.getElementById("codeText");
 
 var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
@@ -19,16 +18,10 @@ function randchar(length) {
 }
 
 // When "host" button is clicked
-hostButton.addEventListener("click",function(){
-    hostButton.style.display = "none";
-    joinButton.style.display = "none";
-
+hostButton.addEventListener("click",function() {
     let roomCode = randchar(6);
-    
-    codeText.style.display = "block";
-    codeText.innerHTML = roomCode;
 
-    window.location = "src/room.php?code=" + roomCode;
+    window.location = "src/room.php?code=" + roomCode + "&nick=admin";
     
     // fetch("src/host.php", {
     //     method: "POST",
