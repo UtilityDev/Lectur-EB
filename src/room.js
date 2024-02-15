@@ -10,10 +10,19 @@ const urlParams = new URLSearchParams(window.location.search);
 const roomCode = urlParams.get("code");
 const nick = urlParams.get("nick");
 
-// Write room code to clipboard
-roomCodeText.addEventListener("click", function () {
-    navigator.clipboard.writeText(roomCodeText.innerText);    
-    alert("Code copied to clipboard!");
+$(".code-copy").on("click", function () {
+    navigator.clipboard.writeText(roomCodeText.innerText);
+    swal("Code copied to clipboard!", "Now you can share it with your students.");
+});
+
+// When the leave chevron is pressed
+$(".leave_icon").on("click", function () {
+    $.ajax({
+        type: "POST",
+        url: "room.php",
+        data: "LEAVE",
+    });
+    // window.location = "../index.php";
 });
 
 const DOMRefresh = () => {

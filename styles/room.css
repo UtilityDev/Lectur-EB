@@ -41,10 +41,9 @@ body {
     font-weight: 900;
 }
 
-.room_code:hover {
+.leave_icon:hover, .code-copy:hover {
     color: var(--power-blue);
     cursor: pointer;
-    text-decoration: underline;
 }
 
 /* Material Icons */
