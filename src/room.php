@@ -17,7 +17,12 @@
             <span class="header_text">Room: <span class="room_code">[ROOM_CODE]</span></span>
             <span class="code-copy material-symbols-rounded icon-align">content_copy</span>
         </div>
-        <span class="nick_text">[NICK_NAME]</span>
+        <div class="user-container">
+            <span class="nick_text">[NICK_NAME]</span>
+            <span class="user-icon material-symbols-rounded icon-align">
+                account_circle
+            </span>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

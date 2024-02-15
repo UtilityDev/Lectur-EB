@@ -29,11 +29,18 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
 }
 
-.nick_text {
+.user-container {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
     margin-left: auto;
 }
 
-.header_text, .nick_text {
+.user-container > .user-icon {
+    font-size: 26px;
+}
+
+.header_text {
     font-size: 28px;
 }
 
