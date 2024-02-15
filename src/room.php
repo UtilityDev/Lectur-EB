@@ -32,10 +32,10 @@
 </html>
 <?php
 
-session_start();
+require("database.php");
 
-if (isset($_POST["LEAVE"])) {
-    echo "Leaving...";
+if (strlen($_GET["code"]) > 6 || roomExists($_GET["code"], $conn)) {
+    Header("Location: ../index.php");
 }
 
 ?>

@@ -17,12 +17,7 @@ $(".code-copy").on("click", function () {
 
 // When the leave chevron is pressed
 $(".leave_icon").on("click", function () {
-    $.ajax({
-        type: "POST",
-        url: "room.php",
-        data: "LEAVE",
-    });
-    // window.location = "../index.php";
+    window.location = "../index.php";
 });
 
 const DOMRefresh = () => {

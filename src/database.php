@@ -18,3 +18,10 @@ function tableInsert(string $table, string $values, mysqli $conn) {
 function insertRoom(string $roomCode, string $adminId, $conn) {
     $conn->query("INSERT INTO Rooms (room_code, admin_id) VALUES ('$roomCode', '$adminId');");
 }
+
+// Check if room exists
+function roomExists(string $code, mysqli $conn) : bool
+{
+    $result = $conn->query("SELECT * FROM Rooms WHERE room_code = '$code'");
+    return ($result->num_rows > 0);
+}

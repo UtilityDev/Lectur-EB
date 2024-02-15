@@ -21,15 +21,15 @@ function randchar(length) {
 hostButton.addEventListener("click",function() {
     let roomCode = randchar(6);
 
-    window.location = "src/room.php?code=" + roomCode + "&nick=admin";
-    
-    // fetch("src/host.php", {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/x-www-form-urlencoded",
-    //     },
-    //     body: roomCode,
-    // });
+    $.ajax({
+        type: "POST",
+        url: "src/create_room.php",
+        data: {code: roomCode, nick: "testname"},
+        dataType: "string",
+        success: function (response) {
+            window.location = "src/room.php?code=" + roomCode + "&nick=admin";
+        }
+    });
 })
 
 // When join button is clicked
